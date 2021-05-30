@@ -1,0 +1,18 @@
+/*===== base styles =====*/
+*,
+::after,
+::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', monospace;
+    list-style-type: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
