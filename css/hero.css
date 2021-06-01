@@ -62,7 +62,7 @@ nav .res {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent), url("../assets/hero__bg.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.95), transparent), url("../assets/hero__bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -73,6 +73,7 @@ nav .res {
 .hero__info .hero__name {
   font-size: 4rem;
   font-weight: 100;
+  margin-bottom: 10px;
 }
 .hero__info small:not(:last-child) {
   padding-right: 20px;
@@ -85,9 +86,15 @@ nav .res {
 @media (max-width: 768px) {
   .hero__info {
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   .hero__info .hero__name {
     font-size: 3rem;
+  }
+  .hero__info small:not(:last-child) {
+    padding-right: 0px;
+    margin-bottom: 5px;
   }
 }
 
