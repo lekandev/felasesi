@@ -1,3 +1,9 @@
+// Themes
+$theme-color-1: #f1f1f1;
+$theme-color-2: #ffffff;
+$text-primary: #f1f1f1;
+$text-secondary: #ffffff;
+
 // nav section
 nav {
     width: 100%;
@@ -24,6 +30,7 @@ nav {
         }
     }
     .res {
+        color: $text-primary;
         display: none;
     }
 }

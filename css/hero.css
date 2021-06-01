@@ -1,5 +1,94 @@
+/*===== base styles =====*/
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", monospace;
+  list-style-type: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+  position: fixed;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav ul .store a {
+  color: #f1f1f1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+nav .res {
+  color: #f1f1f1;
+  display: none;
+}
+
+@media (max-width: 640px) {
+  nav ul {
+    display: none;
+  }
+
+  nav .res {
+    display: block;
+  }
+}
 .hero {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent), url("../assets/hero__bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
+
+.hero__info {
+  color: #fff;
+}
+.hero__info .hero__name {
+  font-size: 4rem;
+  font-weight: 100;
+}
+.hero__info small:not(:last-child) {
+  padding-right: 20px;
+}
+
+.hero__lowerNav a {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hero__info {
+    text-align: center;
+  }
+  .hero__info .hero__name {
+    font-size: 3rem;
+  }
+}
+
 /*# sourceMappingURL=hero.css.map */
