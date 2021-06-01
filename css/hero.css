@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", monospace;
   list-style-type: none;
 }
 
@@ -74,6 +73,10 @@ nav .res {
   font-size: 4rem;
   font-weight: 100;
   margin-bottom: 10px;
+  font-family: "Courgette", cursive;
+}
+.hero__info small {
+  font-family: "Montserrat", sans-serif;
 }
 .hero__info small:not(:last-child) {
   padding-right: 20px;
