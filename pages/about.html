@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="../css/index.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Courgette&family=Dancing+Script:wght@500;600&family=Great+Vibes&family=Merienda&family=Montez&family=Montserrat:wght@300;400&family=Limelight&family=Source+Sans+Pro&family=Space+Grotesk:wght@400;500&Roboto:wght@300&family=Sigmar+One&display=swap" rel="stylesheet">    <!-- font awesome -->
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/1389e4cdbd.js" crossorigin="anonymous"></script>
     <!-- barba js -->
-    
+    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <!-- javascript -->
     <script src="scripts/fela.js" defer></script>
     <title>Another Fela</title>
 </head>
-<body>
+<body data-barba="wrapper">
     <nav>
         <h1 class="logo">FELA</h1>
         <ul>
-            <li><a href="pages/about.html">About</a></li>
-            <li><a href="pages/featured.html">Featured</a></li>
-            <li><a href="pages/gallery.html">Gallery</a></li>
-            <li><a href="pages/contact.html">Contact Me</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="featured.html">Featured</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
         </ul>
         <div class="res"><i class="fas fa-bars"></i></div>
     </nav>
 
-    <main>
-        <div class="top-about__section">
+    <main data-barba="container" data-barba-namespace="about">
+        <div class="top-about__banner"></div>
+            <div class="top-about__section">
             <div class="top-about__img">
                 <img src="../assets/aboutme__img.jpg" alt="Another Fela">
             </div>
@@ -45,44 +46,55 @@
         </div>
 
         <div class="mid-about__section">
-            <!-- <h2>About Me</h2> -->
             <div class="mid-about__banner"></div>
+            <h2>About Me</h2>
             <div class="mid-about__info">
-                <span>Odukoya Adewonuola Rahmat</span> <p>also known as <span>Another Fela</span>
+                <p>Odukoya Adewonuola Rahmat also known as Another Fela
                 Vokalia and Consonantia, there live the blind texts. Separated they
                 live in Bookmarksgrove right at the coast of the Semantics, a large
                 language ocean. A small river named Duden flows by their place and
                 supplies it with the necessary regelialia. It is a paradisematic country,
-                in which roasted parts of sentences fly into your mouth. Even the all-powerfu
-                Pointing has no control about the blind texts it is an almost unorthographic
+                in which roasted parts of sentences fly into your mouth.  has no control about the blind texts it is an almost unorthographic
                 life One day however a small line of blind text by the name of Lorem Ipsum
                 decided to leave for the far World of Grammar. The Big Oxmox advised her not
                 to do so, because there were thousands of bad Commas</p>
             </div>
         </div>
         <div class="bottom-about__section">
-            <h2>Physical details</h2>
             <div class="bottom-about__info">
-                <ul>
-                    <li>Height - 5'4</li>
-                    <li>Weight - 245kg</li>
-                    <li>Eye color - black</li>
-                    <li>Hair color - black</li>
-                    <!-- <li></li>
-                    <li></li> -->
-                </ul>
+                <p>Odukoya Adewonuola Rahmat also known as Another Fela
+                language ocean. A small river named Duden flows by their place and
+                supplies it with the necessary regelialia. It is a paradisematic country,
+                in which roasted parts of sentences fly into your mouth.  has no control about the blind texts it is an almost unorthographic
+                life One day however a small line of blind text by the name of Lorem Ipsum
+                decided to leave for the far World of Grammar. The Big Oxmox advised her not
+                to do so, because there were thousands of bad Commas</p>
+            </div>
                 <div class="bottom-about__img">
-                    <img src="../assets/gallery__img4.jpg" alt="Another Fela">
+                    <img src="../assets/bottom-about__img.jpg" alt="Another Fela">
                 </div>
+            </div>
+        </div>
+
+        <div class="works">
+            <div class="work">
+                <img src="" alt="">
+                <h3 class="title">Gucci</h3>
+                <p class="info">Model</p>
+            </div>
+            <div class="work">
+                <img src="" alt="">
+                <h3 class="title">Fashionbulous</h3>
+                <p class="info">Fashion Designer</p>
             </div>
         </div>
 
         <div class="about__social">
             <h3>Connect with me on these platforms</h3>
             <ul>
-                <li><i class="fab fa-instagram"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-instagram">IG</i></li>
+                <li><i class="fab fa-twitter">TW</i></li>
+                <li><i class="fab fa-facebook">FB</i></li>
             </ul>
         </div>
 
