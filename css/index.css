@@ -78,7 +78,7 @@ nav .res {
   font-size: 4rem;
   font-weight: 100;
   margin-bottom: 10px;
-  font-family: "Courgette", cursive;
+  font-family: "Limelight", cursive;
 }
 .hero__info small {
   font-family: "Montserrat", sans-serif;
@@ -171,6 +171,7 @@ nav .res {
   width: 400px;
   margin-right: 40px;
   line-height: 1.5rem;
+  font-weight: 100;
   font-family: "Roboto", sans-serif;
 }
 .bottom-about__section .bottom-about__img img {
