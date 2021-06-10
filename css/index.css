@@ -49,6 +49,7 @@ nav ul .store a {
 nav .res {
   color: #f1f1f1;
   display: none;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 640px) {
