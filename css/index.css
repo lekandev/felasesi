@@ -195,6 +195,7 @@ nav .res {
 }
 .about__social ul {
   display: flex;
+  justify-content: center;
 }
 .about__social ul li {
   font-size: 4rem;
