@@ -15,6 +15,10 @@ nav {
     padding: 20px;
     position: fixed;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+    h1 {
+        color: $text-secondary;
+        font-family: 'Limelight', cursive;
+    }
     ul  {
         display: flex;
         li {
@@ -22,6 +26,9 @@ nav {
             a {
                 color: $text-secondary;
                 text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Lato', sans-serif;
+                font-size: 0.8rem;
             }
         }
         .store a {

@@ -28,7 +28,7 @@ barba.init({
 //         await loaderIn()
 //     },
 //     enter() {
-//         lodaerAway()
+//         loaderAway()
 //     }
 //   }]
 // });

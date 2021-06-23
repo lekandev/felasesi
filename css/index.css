@@ -31,6 +31,10 @@ nav {
   position: fixed;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
 }
+nav h1 {
+  color: #ffffff;
+  font-family: "Limelight", cursive;
+}
 nav ul {
   display: flex;
 }
@@ -40,6 +44,9 @@ nav ul li {
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 0.8rem;
 }
 nav ul .store a {
   color: #f1f1f1;
@@ -154,7 +161,7 @@ nav .res {
 }
 .mid-about__section .mid-about__banner {
   width: 100%;
-  height: 350px;
+  height: 450px;
   background-image: url("../assets/mid-about__banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -179,7 +186,7 @@ nav .res {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 .bottom-about__section .bottom-about__info {
   width: 400px;
@@ -216,7 +223,7 @@ nav .res {
 }
 .about__social h3 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-family: "Limelight", cursive;
 }
 .about__social ul {
@@ -224,9 +231,21 @@ nav .res {
   justify-content: center;
 }
 .about__social ul li {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 .about__social ul li:not(:last-child) {
+  margin-right: 200px;
+}
+
+.bottom-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.bottom-nav a {
+  color: #111;
+}
+.bottom-nav a:not(:last-child) {
   margin-right: 40px;
 }
 
