@@ -21,14 +21,3 @@ barba.init({
     }
   }]
 });
-// barba.init({
-//   transitions: [{
-//     name: 'page-transition',
-//     async leave() {
-//         await loaderIn()
-//     },
-//     enter() {
-//         loaderAway()
-//     }
-//   }]
-// });

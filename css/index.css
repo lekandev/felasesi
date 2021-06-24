@@ -116,41 +116,71 @@ nav .res {
 .top-about__banner {
   width: 100%;
   height: 100vh;
-  background-image: url("../assets/top-about__banner.jpg");
+  background: url("../assets/top-about__banner.jpg") rgba(0, 0, 0, 0.5);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  z-index: 1;
+  display: grid;
+  place-content: center;
+}
+.top-about__banner h1 {
+  z-index: 10;
+  color: #fff;
+  font-size: 4.5rem;
+  letter-spacing: 5px;
+  text-align: center;
+  font-family: "Limelight", cursive;
+  margin-bottom: 20px;
 }
 
 .top-about__section {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 70px 0;
 }
 .top-about__section .top-about__img img {
-  width: 400px;
-  margin-right: 50px;
+  width: 550px;
+  height: 600px;
+  margin-right: 100px;
+  object-fit: cover;
 }
 .top-about__section .top-about__brief {
-  font-size: 1.5rem;
-  width: 350px;
+  font-size: 1.1rem;
+  width: 400px;
   font-family: "Space Grotesk", sans-serif;
+}
+.top-about__section .top-about__brief div:first-child {
+  margin-bottom: 30px;
+}
+.top-about__section .top-about__brief .bolded-info {
   font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 664px) {
+  .top-about__banner h1 {
+    font-size: 3.5rem;
+  }
+
   .top-about__section {
     flex-direction: column;
   }
   .top-about__section .top-about__img img {
     width: 300px;
+    height: 100%;
     margin-right: 0;
     margin-bottom: 50px;
   }
   .top-about__section .top-about__brief {
     font-size: 1rem;
+    width: 300px;
   }
 }
 .mid-about__section {
@@ -166,7 +196,7 @@ nav .res {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-bottom: 40px;
+  margin-bottom: 90px;
 }
 .mid-about__section h2 {
   text-align: center;
@@ -175,28 +205,44 @@ nav .res {
   font-family: "Limelight", cursive;
 }
 .mid-about__section .mid-about__info {
-  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  display: grid;
+  place-content: center;
   padding: 0 50px;
-  line-height: 1.5rem;
-  font-weight: 100;
+  line-height: 1.7rem;
+}
+.mid-about__section .mid-about__info .quote {
+  max-width: 1050px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
 }
 
+@media screen and (max-width: 664px) {
+  .mid-about__info {
+    padding: 0 20px;
+  }
+  .mid-about__info .quote {
+    max-width: 100%;
+  }
+}
 .bottom-about__section {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 100px;
+  margin: 90px 0;
 }
 .bottom-about__section .bottom-about__info {
   width: 400px;
-  margin-right: 40px;
+  margin-right: 100px;
   line-height: 1.5rem;
   font-weight: 100;
   font-family: "Roboto", sans-serif;
 }
 .bottom-about__section .bottom-about__img img {
-  width: 400px;
+  width: 550px;
+  height: 600px;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 664px) {
@@ -204,46 +250,94 @@ nav .res {
     flex-direction: column;
   }
   .bottom-about__section .bottom-about__info {
-    font-size: 1rem;
+    width: 300px;
     margin-right: 0;
     margin-bottom: 50px;
   }
   .bottom-about__section .bottom-about__img img {
     width: 300px;
+    height: 100%;
   }
 }
 .works {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 90px 0;
+}
+.works .work-profile img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-right: 150px;
+}
+.works .work-info {
+  width: 300px;
+}
+.works .work-info h3 {
+  font-family: "Limelight", cursive;
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+}
+.works .work-info a {
+  color: #111;
 }
 
+@media screen and (max-width: 664px) {
+  .works {
+    flex-direction: column;
+  }
+  .works .work-profile img {
+    margin: 20px 0;
+  }
+  .works .work-info {
+    text-align: center;
+  }
+}
 .about__social {
   display: grid;
   place-content: center;
-  margin: 20px;
+  margin: 50px;
 }
 .about__social h3 {
   text-align: center;
   margin-bottom: 40px;
   font-family: "Limelight", cursive;
+  letter-spacing: 5px;
 }
 .about__social ul {
   display: flex;
   justify-content: center;
 }
-.about__social ul li {
+.about__social ul li .fab {
   font-size: 3rem;
+  color: #111;
 }
 .about__social ul li:not(:last-child) {
   margin-right: 200px;
 }
 
+@media screen and (max-width: 664px) {
+  .about__social {
+    margin: 30px;
+  }
+  .about__social ul li .fab {
+    font-size: 2.5rem;
+  }
+  .about__social ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 .bottom-nav {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin: 70px 0;
 }
 .bottom-nav a {
   color: #111;
+  text-transform: uppercase;
 }
 .bottom-nav a:not(:last-child) {
   margin-right: 40px;
@@ -251,14 +345,42 @@ nav .res {
 
 footer {
   width: 100%;
-  height: 80px;
+  height: 70px;
   display: grid;
   place-content: center;
+  border-top: 0.4px solid gray;
+}
+footer a {
+  color: #111;
+}
+
+@media screen and (max-width: 664px) {
+  footer {
+    height: 80px;
+    text-align: center;
+  }
+}
+.gallery-main {
+  padding-top: 60px;
+  text-align: center;
+  display: grid;
+  place-content: center;
+}
+.gallery-main h1 {
+  font-family: "Limelight", cursive;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+.gallery-main p {
+  font-size: 1.3rem;
+  font-family: "Space Grotesk", sans-serif;
+  max-width: 1000px;
+  margin-bottom: 50px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   align-items: center;
 }
@@ -266,6 +388,28 @@ footer {
 .gallery__single {
   display: grid;
   place-content: center;
+}
+.gallery__single img {
+  width: 290px;
+  height: 250px;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+}
+.gallery__single img:hover {
+  transform: scale(1.03);
+}
+
+@media screen and (max-width: 664px) {
+  .gallery-main p {
+    font-size: 1.1rem;
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0 20px;
+    margin-bottom: 50px;
+  }
+
+  .gallery {
+    gap: 30px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

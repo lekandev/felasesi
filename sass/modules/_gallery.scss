@@ -1,6 +1,24 @@
+.gallery-main {
+    padding-top: 60px;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    h1 {
+        font-family: 'Limelight', cursive;
+        margin-bottom: 20px;
+        letter-spacing: 5px;
+    }
+    p {
+        font-size: 1.3rem;
+        font-family: 'Space Grotesk', sans-serif;
+        max-width: 1000px;
+        margin-bottom: 50px;
+    }
+}
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     align-items: center;
 }
@@ -8,4 +26,27 @@
 .gallery__single {
     display: grid;
     place-content: center;
+    img  {
+        width: 290px;
+        height: 250px;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+    }
+    img:hover  {
+        transform: scale(1.03)
+    }
+}
+
+@media screen and (max-width: 664px) {
+    .gallery-main {
+        p {
+            font-size: 1.1rem;
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0 20px;
+            margin-bottom: 50px;
+        }
+    }
+    .gallery {
+        gap: 30px;
+    }
 }
