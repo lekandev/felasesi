@@ -182,6 +182,14 @@ nav .res {
     font-size: 1rem;
     width: 300px;
   }
+  .top-about__section .top-about__brief div:first-child {
+    margin-bottom: 20px;
+  }
+  .top-about__section .top-about__brief .bolded-info {
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
 }
 .mid-about__section {
   width: 100%;
@@ -212,7 +220,6 @@ nav .res {
   line-height: 1.7rem;
 }
 .mid-about__section .mid-about__info .quote {
-  max-width: 1050px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
 }
@@ -222,7 +229,7 @@ nav .res {
     padding: 0 20px;
   }
   .mid-about__info .quote {
-    max-width: 100%;
+    width: 300px;
   }
 }
 .bottom-about__section {
@@ -331,7 +338,7 @@ nav .res {
     font-size: 2.5rem;
   }
   .about__social ul li:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 60px;
   }
 }
 .bottom-nav {
@@ -347,7 +354,15 @@ nav .res {
 .bottom-nav a:not(:last-child) {
   margin-right: 40px;
 }
+.bottom-nav a:hover {
+  transform: scale(1.02);
+}
 
+@media screen and (max-width: 664px) {
+  .bottom-nav a:not(:last-child) {
+    margin-right: 80px;
+  }
+}
 footer {
   width: 100%;
   height: 70px;
