@@ -126,7 +126,7 @@
         margin-right: 100px;
         line-height: 1.5rem;
         font-weight: 300;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Space Grotesk', sans-serif;
     }
     .bottom-about__img img {
         width: 550px;
@@ -144,6 +144,7 @@
             // font-size: 1rem;
             margin-right: 0;
             margin-bottom: 50px;
+            font-size: 1rem;
         }
         .bottom-about__img img {
             width: 300px;
@@ -171,6 +172,10 @@
             padding-bottom: 10px;
             letter-spacing: 5px;
         }
+        .info {
+            font-family: 'Space Grotesk', sans-serif;
+            line-height: 1.4rem;
+        }
         a {
             color: #111;
         }
@@ -181,7 +186,7 @@
     .works {
         flex-direction: column;
         .work-profile img {
-            margin: 20px 0;
+            margin: 20px 0 50px;
         }
         .work-info {
             text-align: center;

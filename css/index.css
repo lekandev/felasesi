@@ -237,7 +237,7 @@ nav .res {
   margin-right: 100px;
   line-height: 1.5rem;
   font-weight: 300;
-  font-family: "Roboto", sans-serif;
+  font-family: "Space Grotesk", sans-serif;
 }
 .bottom-about__section .bottom-about__img img {
   width: 550px;
@@ -253,6 +253,7 @@ nav .res {
     width: 300px;
     margin-right: 0;
     margin-bottom: 50px;
+    font-size: 1rem;
   }
   .bottom-about__section .bottom-about__img img {
     width: 300px;
@@ -280,6 +281,10 @@ nav .res {
   padding-bottom: 10px;
   letter-spacing: 5px;
 }
+.works .work-info .info {
+  font-family: "Space Grotesk", sans-serif;
+  line-height: 1.4rem;
+}
 .works .work-info a {
   color: #111;
 }
@@ -289,7 +294,7 @@ nav .res {
     flex-direction: column;
   }
   .works .work-profile img {
-    margin: 20px 0;
+    margin: 20px 0 50px;
   }
   .works .work-info {
     text-align: center;
