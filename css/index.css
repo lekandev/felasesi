@@ -45,7 +45,7 @@ nav ul li a {
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Lato", sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   font-size: 0.8rem;
 }
 nav ul .store a {
@@ -68,6 +68,10 @@ nav .res {
     display: block;
   }
 }
+.transparent {
+  background: transparent;
+}
+
 .hero {
   height: 100vh;
   width: 100%;
@@ -103,6 +107,7 @@ nav .res {
 .hero__lowerNav a {
   color: #fff;
   text-transform: uppercase;
+  font-family: "Julius Sans One", sans-serif;
 }
 .hero__lowerNav a:hover {
   transform: scale(1.02);
@@ -229,6 +234,7 @@ nav .res {
   line-height: 1.7rem;
 }
 .mid-about__section .mid-about__info .quote {
+  width: 1050px;
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
 }
@@ -331,12 +337,18 @@ nav .res {
   display: flex;
   justify-content: center;
 }
+.about__social ul li {
+  transition: 0.18s ease-in;
+}
 .about__social ul li .fab {
   font-size: 3rem;
   color: #111;
 }
 .about__social ul li:not(:last-child) {
   margin-right: 200px;
+}
+.about__social ul li:hover {
+  transform: translateY(-5px);
 }
 
 @media screen and (max-width: 664px) {
@@ -359,6 +371,7 @@ nav .res {
 .bottom-nav a {
   color: #111;
   text-transform: uppercase;
+  font-family: "Julius Sans One", sans-serif;
 }
 .bottom-nav a:not(:last-child) {
   margin-right: 40px;
@@ -420,7 +433,7 @@ footer a {
 }
 .gallery__single img {
   width: 290px;
-  height: 250px;
+  height: 290px;
   object-fit: cover;
   transition: 0.3s ease-in-out;
 }
