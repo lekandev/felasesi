@@ -240,10 +240,10 @@ nav .res {
 }
 
 @media screen and (max-width: 664px) {
-  .mid-about__info {
+  .mid-about__section .mid-about__info {
     padding: 0 20px;
   }
-  .mid-about__info .quote {
+  .mid-about__section .mid-about__info .quote {
     width: 300px;
   }
 }
