@@ -484,11 +484,12 @@ footer a {
   align-items: center;
 }
 .contact__container form input:not(:last-child) {
-  width: 250px;
+  width: 260px;
   height: 50px;
   outline: none;
   border-width: 0px 0px 1px 0px;
   margin-bottom: 30px;
+  transition: width 0.3s ease-in-out;
 }
 .contact__container form input:last-child {
   width: 150px;
@@ -496,11 +497,15 @@ footer a {
   background: transparent;
   border: 1px solid #111;
   margin-bottom: 50px;
-  transition: 0.2s ease-in;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
 .contact__container form input:last-child:hover {
   background: #111;
   color: #fff;
+}
+.contact__container form input:not(:last-child):focus {
+  width: 280px;
 }
 
 /*# sourceMappingURL=index.css.map */
