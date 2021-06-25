@@ -1,6 +1,4 @@
 // Themes
-$theme-color-1: #f1f1f1;
-$theme-color-2: #ffffff;
 $text-primary: #f1f1f1;
 $text-secondary: #ffffff;
 
@@ -13,7 +11,8 @@ nav {
     padding: 20px;
     position: fixed;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
-    // z-index: 10;
+    transition: 0.35s ease-in linear;
+    z-index: 3;
     h1 {
         font-family: 'Limelight', cursive;
         a {

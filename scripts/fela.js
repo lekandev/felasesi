@@ -1,20 +1,24 @@
 console.log("Fela is Hot");
 const sideNav = document.querySelector(".fa-bars");
-let navigation = document.querySelector(".nav");
+// let navigation = document.querySelector(".nav");
 
 sideNav.addEventListener("click", () => {
     sideNav.classList.toggle("fa-times");
 });
 
-window.onscroll = () => {
-    const top = window.scrollY
-    if (top >= 200) {
-        navigation.style.backgroundColor = "#111";
-    } else {
-        navigation.style.backgroundColor = "transparent";
-    }
-    
-}
+// window.onscroll = () => {
+//     const top = window.scrollY
+//     if (top >= 200) {
+//         navigation.style.backgroundColor = "#111";
+//     } else {
+//         navigation.style.backgroundColor = "transparent";
+//     }
+// }
+
+// INITIALIZE AOS
+{/* <script> */}
+  AOS.init();
+{/* </script> */}
 // Page transitions
 // barba.init({
 //   transitions: [{
