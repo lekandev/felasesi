@@ -472,6 +472,7 @@ footer a {
 }
 .contact__container p {
   margin-bottom: 20px;
+  text-align: center;
 }
 .contact__container form {
   display: flex;
