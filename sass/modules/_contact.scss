@@ -1,0 +1,42 @@
+.contact-main {
+    padding-top: 70px;
+}
+
+// .contact {
+//     height: 100vh;
+// }
+
+.contact__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        object-fit: cover;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    form  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input:not(:last-child){
+            width: 250px;
+            height: 50px;
+            outline: none;
+            border-width: 0px 0px 1px 0px;
+            margin-bottom: 30px;
+        }
+        input:last-child{
+            width: 150px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid #111;
+        }
+    }
+}

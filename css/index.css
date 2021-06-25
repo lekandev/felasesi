@@ -453,5 +453,43 @@ footer a {
     gap: 30px;
   }
 }
+.contact-main {
+  padding-top: 70px;
+}
+
+.contact__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact__container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+.contact__container p {
+  margin-bottom: 20px;
+}
+.contact__container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__container form input:not(:last-child) {
+  width: 250px;
+  height: 50px;
+  outline: none;
+  border-width: 0px 0px 1px 0px;
+  margin-bottom: 30px;
+}
+.contact__container form input:last-child {
+  width: 150px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #111;
+}
 
 /*# sourceMappingURL=index.css.map */
