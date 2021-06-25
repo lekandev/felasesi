@@ -40,7 +40,7 @@
             height: 40px;
             background: transparent;
             border: 1px solid #111;
-            margin-bottom: 50px;
+            margin-bottom: 30px;
             cursor: pointer;
             transition: 0.3s ease-in-out;
         }
@@ -52,5 +52,18 @@
         input:not(:last-child):focus {
             width: 280px;
         }
+    }
+}
+
+.contact__lowerNav {
+    text-align: center;
+    margin-bottom: 40px;
+    a {
+        color: #111;
+        text-transform: uppercase;
+        font-family: 'Julius Sans One', sans-serif;
+    }
+    a:hover {
+        transform: scale(1.02);
     }
 }

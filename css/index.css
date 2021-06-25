@@ -198,6 +198,7 @@ nav .res {
   .top-about__section .top-about__brief {
     font-size: 1rem;
     width: 300px;
+    line-height: 1.5rem;
   }
   .top-about__section .top-about__brief div:first-child {
     margin-bottom: 20px;
@@ -394,6 +395,7 @@ footer {
   display: grid;
   place-content: center;
   border-top: 0.4px solid gray;
+  font-family: "Space Grotesk", sans-serif;
 }
 footer a {
   color: #111;
@@ -496,7 +498,7 @@ footer a {
   height: 40px;
   background: transparent;
   border: 1px solid #111;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -506,6 +508,19 @@ footer a {
 }
 .contact__container form input:not(:last-child):focus {
   width: 280px;
+}
+
+.contact__lowerNav {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.contact__lowerNav a {
+  color: #111;
+  text-transform: uppercase;
+  font-family: "Julius Sans One", sans-serif;
+}
+.contact__lowerNav a:hover {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=index.css.map */
