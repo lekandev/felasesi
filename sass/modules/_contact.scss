@@ -15,12 +15,13 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         object-fit: cover;
     }
     p {
         margin-bottom: 20px;
         text-align: center;
+        max-width: 230px;
     }
     form  {
         display: flex;
@@ -33,11 +34,17 @@
             border-width: 0px 0px 1px 0px;
             margin-bottom: 30px;
         }
-        input:last-child{
+        input:last-child {
             width: 150px;
             height: 40px;
             background: transparent;
             border: 1px solid #111;
+            margin-bottom: 50px;
+            transition: 0.2s ease-in;
+        }
+        input:last-child:hover {
+            background: #111;
+            color: #fff;
         }
     }
 }

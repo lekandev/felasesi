@@ -32,8 +32,11 @@ nav {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
 }
 nav h1 {
-  color: #ffffff;
   font-family: "Limelight", cursive;
+}
+nav h1 a {
+  color: #ffffff;
+  text-decoration: none;
 }
 nav ul {
   display: flex;
@@ -467,12 +470,13 @@ footer a {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   object-fit: cover;
 }
 .contact__container p {
   margin-bottom: 20px;
   text-align: center;
+  max-width: 230px;
 }
 .contact__container form {
   display: flex;
@@ -491,6 +495,12 @@ footer a {
   height: 40px;
   background: transparent;
   border: 1px solid #111;
+  margin-bottom: 50px;
+  transition: 0.2s ease-in;
+}
+.contact__container form input:last-child:hover {
+  background: #111;
+  color: #fff;
 }
 
 /*# sourceMappingURL=index.css.map */
