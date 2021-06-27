@@ -242,6 +242,9 @@ nav .res {
   font-family: "Space Grotesk", sans-serif;
   font-weight: 500;
 }
+.mid-about__section .mid-about__info .quote small {
+  font-weight: 200;
+}
 
 @media screen and (max-width: 664px) {
   .mid-about__section .mid-about__info {
@@ -249,6 +252,9 @@ nav .res {
   }
   .mid-about__section .mid-about__info .quote {
     width: 300px;
+  }
+  .mid-about__section .mid-about__info .quote small {
+    padding-top: 5px;
   }
 }
 .bottom-about__section {
@@ -264,6 +270,9 @@ nav .res {
   line-height: 1.5rem;
   font-weight: 300;
   font-family: "Space Grotesk", sans-serif;
+}
+.bottom-about__section .bottom-about__info p:first-child {
+  margin-bottom: 10px;
 }
 .bottom-about__section .bottom-about__img img {
   width: 550px;
@@ -479,6 +488,7 @@ footer a {
   margin-bottom: 20px;
   text-align: center;
   max-width: 230px;
+  font-family: "Space Grotesk", sans-serif;
 }
 .contact__container form {
   display: flex;
